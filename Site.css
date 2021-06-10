@@ -1,4 +1,4 @@
-﻿/* Move down content because we have a fixed navbar that is 50px tall */
+﻿/* Move down content because of fixed navbar that is 50px tall */
 html {
     font-family: Calibri;
     /*Georgia;*/
@@ -111,41 +111,6 @@ body {
         width: 95%;
     }
 }
-    /*.content2 {
-        position: relative;
-        text-align: center;
-        background-color: rgb(162,189,210); /*fallback color*/
-    /*
-background-color: rgba(162, 189, 210, 0.7);
-font-weight: bold;
-border: 2px dashed #6F6F6F;
-border-radius: 50%;
-height: 340px;
-width: 100%; 
-*/
-
-    /*    position: relative;
-    text-align: center;   
-    background: rgb(255,255,255); Fallback color 
-    background: rgba(255,255,255,0.4);  white background with 0.5 opacity 
-    font-weight: bold;
-    color: #696969;
-    padding-left: 10%;
-    padding-right: 10%;
-    }
-
-.content2 h2 {
-    color: whitesmoke;
-    text-shadow: 2px 2px 2px #000000;
-     font-weight: bold;
-}
-
-    .content2 ul {
-        display: inline-block;
-        text-align: left;
-        color: black;
-    }
-    */
 
     .content2 {
         position: relative;
@@ -185,66 +150,6 @@ width: 100%;
             font-size: 14px;
         }
     }
-    /*.circle {
-    position: relative;
-    text-align: center;
-    width: 94%;
-    height: 0;
-    padding: 45% 0;
-    border-radius: 50%;
-    background-color: rgb(162,189,210); /*fallback color
-    background-color: rgba(162, 189, 210, 0.7);
-    font-family: Georgia;
-      
-}
-
-
-.circle p {
-    margin-top: -110px;
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-    font-weight: bold;
-    font-size: 2.3em;
-}
-
-.circle ul {
-    display: inline-block;
-    text-align: left;
-    color: black;
-    font-weight:bold;
-    font-size:large;
-}
-
-
-
-
-
-    @media screen and (max-width:599px) {
-        .circle {
-            width: 80%;
-            height: 0;
-            padding: 38% 0;
-            border-radius: 50%;
-            background-color: rgb(162,189,210); /*fallback color
-            background-color: rgba(162, 189, 210, 0.7);
-        }
-
-            .circle p {
-                margin-top: -110px;
-                color: white;
-                text-shadow: 2px 2px 2px #000000;
-                font-weight: bold;
-                font-size: 1.8em;
-            }
-
-            .circle ul {
-                display: inline-block;
-                text-align: left;
-                color: black;
-                font-weight: bold;
-                font-size: large;
-            }
-    }*/
 
     .content3 {
         position: relative;
@@ -372,7 +277,7 @@ width: 100%;
         transform-style: preserve-3d;
     }
 
-    /* Do an horizontal flip when you move the mouse over the flip box container */
+    /* Do a horizontal flip when you move the mouse over the flip box container */
     .flip-box:hover .flip-box-inner {
         transform: rotateX(180deg);
     }
@@ -408,7 +313,7 @@ width: 100%;
             background-color: transparent;
             width: 330px;
             height: 450px;
-            perspective: 1000px; /* Remove this if you don't want the 3D effect */
+            perspective: 1000px; /* Remove this if you don't want 3D effect */
             padding-left: 25%;
             padding-right: 10%;
         }
@@ -460,7 +365,7 @@ width: 100%;
             background-color: transparent;
             width: 270px;
             height: 450px;
-            perspective: 1000px; /* Remove this if you don't want the 3D effect */
+            perspective: 1000px; /* Remove this if you don't want 3D effect */
             padding-left: 2%;
             padding-right: 3%;
         }
@@ -555,9 +460,6 @@ width: 100%;
         border-color: #6F6F6F;
     }
 
-
-
-
     .footer-detail {
         font-family: Calibri; /*Georgia;*/
         margin-left: 0;
@@ -606,8 +508,6 @@ width: 100%;
     .footer-detail-links a {
         color: #ffffff;
     }
-
-
 
     /* Responsive: Portrait tablets and up */
     @media screen and (min-width: 768px) {
