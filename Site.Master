@@ -1,0 +1,189 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="YourDoctorsOffice.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Your Doctors Office</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+      <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        #GrayMenu {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left:2px;
+            padding-right:2px;
+            background-color: #6F6F6F;
+            border-color: #888888;
+                  
+        }
+
+            #GrayMenu ul li a {
+                color: white;
+                font-size: 18px;
+                font-weight: bold;     
+              
+	          
+            }
+
+            #GrayMenu ul li a:hover {
+                
+                 background-color: #404040;
+            
+            }
+
+    </style>
+  
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-static-top" id="GrayMenu">
+            <div class="container-fluid">
+                <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" " style="background-color: #404040; margin-top:25px; padding:6px">
+                        <span class="icon-bar" style="background-color: lightskyblue"></span>
+                        <span class="icon-bar" style="background-color: lightskyblue"></span>
+                        <span class="icon-bar" style="background-color: lightskyblue"></span>
+                    </button>
+                    <a class="navbar-brand header-logo" style="margin-bottom:25px" runat="server" href="~/">
+            <span style=" font-size: 18px; color:white; font-weight: bold;"><img src="~/Images/peoplesmall.png" runat="server" /> Your Doctor's Office</span>
+             </a>
+                </div>
+                 
+                <div class="navbar-collapse collapse" style="font-size:18px; padding-top:10px;">
+                    <ul class="nav navbar-nav navbar-right" >
+                        <li><a runat="server" href="~/">Home</a></li>
+                        <li><a runat="server" href="~/About">About</a></li>
+                        <li><a runat="server" href="~/Services">Services</a></li>
+                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-content">
+            <asp:ContentPlaceHolder ID="Header" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+         
+    </div>
+   
+
+            <div class="row footer-detail">
+                <div class="col-md-4 footer-detail-column">
+                     <div class="footer-detail-logo">
+                        <img src="~/Images/people.png" runat="server" />&nbsp; Your Doctor's Office
+                    </div>
+                    <div class="footer-detail-spaced" >
+                     Serving our community since 2005. <br />
+                    We care for all ages 0 to 100+ <br />
+                   <p style="font-size:2.2rem;padding-top:20px;">New Patients Welcome!</p>
+                        </div>
+                </div>
+
+                    <div class="col-md-4 footer-detail-column">
+                    <div class="footer-detail-heading">
+                        <h2 style="color: #b3d9ff;">Office Hours</h2>
+                        <span style="color:#b3d9ff; font-weight:bold; font-size:2rem; " >* appointment only</span>
+                      
+                    </div> <br />
+
+                    <p class="footer-detail-text">
+                        Monday & Wednesday
+         <br />
+                        8:00 am - 7:00 pm
+                    </p>
+                    <p class="footer-detail-text">
+                        Tuesday, Thursday & Friday
+        <br />
+                        8:00 am - 5:00 pm
+                    </p>
+                    <p class="footer-detail-text" style="padding-bottom:10px;">
+                        Saturday<br />
+                        8:00 am - 12:00 pm
+                    </p>
+                      
+
+                </div>
+
+
+                <div class="col-md-4 footer-detail-column">
+
+                    <div class="footer-detail-heading">
+                        <h2 style="color: #b3d9ff;">Resources</h2>
+                        <span style="color: #b3d9ff;  font-size: 2rem;">Click below to visit links: </span>
+                    </div> 
+
+                    <ul class="footer-detail-links" style="padding:10px; ">
+                      
+                         <li >
+                            <a href="https://www.cdc.gov/" target="_blank">
+                                <span style="color:white;  font-size: 2rem;"><u>Centers for Disease Control</u></span>
+                            </a>
+                        </li>
+                         <li>
+                            <a href="https://www.hhs.gov/hipaa/index.html" target="_blank">
+                                <span style="color:white;  font-size: 2rem;"><u>HIPAA Privacy Policy</u></span>
+
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://health.usnews.com/health-conditions/heart-health/integrative-medicine/overview" target="_blank">
+                                <span style="color:white;  font-size: 2rem;"><u>Integrative Medicine</u></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.nih.gov/" target="_blank">
+                                <span style="color:white;  font-size: 2rem;"><u>National Institutes of Health</u></span>
+                            </a>
+                        </li>
+                   </ul>
+                </div>
+            </div>
+      
+            <hr />
+            <footer style="font-size: 1.2em; text-align:left;">
+                <p style="padding-left: 15px;">&copy; <%: DateTime.Now.Year %> - Denise Weber</p>
+            </footer>
+    
+     </form>
+</body>
+</html>
