@@ -5,10 +5,9 @@ This project is a sample responsive doctor's office website created in Asp.Net u
 
 ## Technologies
 Project is created with:
-*Visual Studio 2019
 *Asp.Net
-*HTML
-*CSS
+*C#
+*HTML/CSS
 *Javascript
 *jQuery
 *Bootstrap
