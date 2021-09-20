@@ -5,13 +5,13 @@ This project is a sample responsive doctor's office website created in Asp.Net u
 
 ## Technologies
 Project is created with:
-*Asp.Net
-*C#
-*HTML/CSS
-*Javascript
-*jQuery
-*Bootstrap
-*deployed on Azure
+Asp.Net
+C#
+HTML/CSS
+Javascript
+jQuery
+Bootstrap
+deployed on Azure
 
 ## View
 View website:  https://yourdoctorsoffice2021.azurewebsites.net/
